@@ -85,15 +85,6 @@
     <ClCompile Include="GeneratedFiles\qrc_GaumontServerPlastron.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_FullMediaPlayerWithList.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_FullMediaPlayerWithList.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="Files\Sources\FullMediaPlayerWithList.cpp">
-      <Filter>Source Files\Video</Filter>
-    </ClCompile>
     <ClCompile Include="Files\Sources\DisplayWindow.cpp">
       <Filter>Source Files\Video</Filter>
     </ClCompile>
@@ -116,9 +107,6 @@
     </CustomBuild>
     <CustomBuild Include="Resources\GaumontServerPlastron.qrc">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Files\Headers\FullMediaPlayerWithList.h">
-      <Filter>Header Files\Video</Filter>
     </CustomBuild>
     <CustomBuild Include="Files\Headers\DisplayWindow.h">
       <Filter>Header Files\Video</Filter>

@@ -1,7 +1,6 @@
 #include "QTWebServer.h"
 #include "DisplayWindow.h"
 #include "ApplicationManager.h"        
-#include "FullMediaPlayerWithList.h"
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
