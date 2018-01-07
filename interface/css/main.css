@@ -1,0 +1,474 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div.wrapAll{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    /*background-color: #343336;*/
+}
+div#wrapOne{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    /*background-color: #343336;*/
+}
+div.ban {
+    width: 100%;
+    display: block;
+    /*border: 1px #555 solid ;*/
+    margin: 10px 0;
+}
+div#one {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+div.panel {
+    width: 480px;
+    height: 100%;
+    display: block;
+    /*background-color: #444;*/
+    //display: table;
+}
+
+div.panel#stream {
+    position: relative;
+    float: left;
+}
+
+div.bannerElement
+{
+    float: left;
+}
+div.block {
+    width: 30%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    /*background-color: #555;*/
+    border-radius: 10px;
+}
+
+div.infoStream {
+    width: 130%;
+    /*background-color: DarkSlateBlue;*/
+    /*opacity: 0.4;*/
+}
+
+div.infoStream#p_stream ul{
+    padding-right:72.3%;
+    width: 22%;
+    position: absolute;
+    height: 185px;
+}
+
+div.screen {
+    width: 52%;
+    /*background-color: blue;*/
+    /*opacity: 0.6;*/
+    z-index: 1;
+}
+
+div.screen#s_stream {
+    position: relative;
+    float: right;
+    left: -28%;
+    top: 2px;
+}
+
+ul {
+    display: inline-block;
+    // position: absolute;
+    //width: 130%;
+
+    text-align: center;
+    line-height: 21px;
+    background-color: #42338e;
+    border-radius: 10px;
+    /*color: #992;*/
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    /*color: gold;*/
+    /*color: #998326;*/
+    color: white;
+    /*margin: 10px;*/
+    /*opacity: 1;*/
+    //display: table;
+    /*display:block;*/
+    border: 1px grey solid ;
+    padding-top: 5px;
+    opacity: 1;
+}
+li {
+    width: 100%;
+    height: 5%;
+    padding: 8px;
+    border-top: 1px;
+    border-color: grey;
+    border-style: solid;
+    background-color: #352975;
+    color: #FAE47A;
+    opacity: 1;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 10px;
+}
+li:last-child {
+    height:50%;
+    border-radius: 0px 0px 10px 10px;
+}
+/*li#last*/
+li.infos {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/*video*/
+video.vid {
+    width:100%;
+    overflow: hidden;
+    /*opacity: 0.5;*/
+    border: 1px grey solid ;
+    border-radius: 15px;
+    background-color: black;
+}
+
+div#control
+{
+    width:40%;
+    // float: left;
+    margin: auto;
+}
+.line_control
+{
+    display: block;
+}
+
+div#time {
+    background: rgba(202, 131, 130, 0.44);
+    border: brown 1px solid;
+    border-radius: 10px;
+    color: #f5d86d;
+    text-align: center;
+    height: 60%;
+    padding: 5px 0;
+    font-size: 20px;
+    font-family: Arial;
+    width: 100%;
+    color: rgba(255, 239, 113, 0.91);
+    display: block;
+}
+
+.infoTxt
+{
+    color: #000000;
+    font-family: calibri;
+}
+
+div#btn_stream 
+{
+    background: rgb(0, 204, 0);
+    display: block;
+    width: 85%;
+    padding: 8px;
+    margin: 5px auto;
+    border: brown 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div#btn_stream:hover {
+    background: rgba(204, 255, 204, 1);
+
+
+}
+
+div#btn_ads 
+{
+    background: rgb(255, 0, 51);
+    display: block;
+    width: 85%;
+    padding: 8px;
+    margin: 5px auto;
+    border: brown 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div#btn_ads:hover {
+    background: rgba(255, 153, 153, 1);
+
+}
+
+div.btn_selected
+{
+    background-color:darkgreen;   
+}
+
+.svgwrapper
+{
+    display: block;
+    margin: 10px auto -10px;
+}
+.btn_txt {
+    text-align: center;
+}
+
+.svg
+{
+    display: block;
+    margin: 10px auto;
+}
+
+#audio {
+    float: left;
+    width: 35%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+span.imgHolder {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img{
+    vertical-align: middle;
+    width : 100%;
+}
+
+.HDMIA {
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    position: relative;
+    top: -106px;
+    left: 194px;
+}
+
+.HDMIASelector {
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: relative;
+    top: -102px;
+    left: 259px;
+    border-radius: 50px;
+}
+
+.HDMIA:hover, .HDMIB:hover
+{
+    background: #e18d8d80; 
+}
+
+.HDMIB {
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    position: relative;
+    top: -175px;
+    left: 364px;
+}
+
+.HDMIBSelector {
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: relative;
+    top: -174px;
+    left: 431px;
+    border-radius: 50px;
+}
+
+.infoBulleContainer
+{
+    width: 33%;
+    height: 60px;
+    display: inline-block;
+    background: none;
+}
+
+.infoBulle
+{
+    width: 200px;
+    text-align: center;
+    display: block;
+    height: 100%;
+    border: 2px white solid ;
+    border-radius: 10px;
+    background: red;
+    vertical-align: middle;
+    color : white;
+    font-size: 19px;
+    line-height: 30px;
+    background: rgb(208, 175, 71);;
+}
+
+.clear
+{
+    clear: both; 
+}
+
+.hiddenText
+{
+    visibility: hidden;
+    font-size: 65px;
+}
+
+#Left
+{
+    float:  right;
+}
+#Center
+{
+    margin:  auto;
+    background: rgb(215, 155, 51);;
+}
+#Right
+{
+    float:  left;
+}
+
+.proj, .film
+{
+    display: block;
+    margin: auto;
+    width : 40%;
+}
+
+.playlist
+{
+    float: left;
+    width: 200px;
+}
+
+#playlistHeader
+{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-left: 15px;
+    padding-top: 5px;
+    height: 35px;
+}
+
+.deroule
+{
+    width: 100%;
+    font-size: 22px;
+    padding: 6px 15px 0 0;
+    background: #582d2c;
+    color: yellow;
+    text-align: center;
+}
+
+.deroule li
+{
+    line-height: 16px;
+    background: #924b4a;
+    font-size: 18px;
+    color: white;
+}
+
+.proj .vid
+{
+    width: 33%;
+    position:absolute;
+}
+
+#img_proj
+{
+    width: 92%;   
+}
+#wrapFour {
+    height: 28.5%;
+    background: -webkit-linear-gradient(left, #9e8f7c, transparent, transparent, transparent, #9e8f7c) no-repeat;
+    //background-color: #343336;/* For browsers that do not support gradients */  
+    background: -webkit-linear-gradient(left, #9e8f7c, transparent, transparent, transparent, #9e8f7c) no-repeat;
+    background: -o-linear-gradient(left, #9e8f7c, transparent, transparent, transparent, #9e8f7c) no-repeat; /* For Opera 11.6 to 12.0 */
+    background: -moz-linear-gradient(left, #9e8f7c, transparent, transparent, transparent, #9e8f7c) no-repeat; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #9e8f7c, transparent, transparent, transparent, #9e8f7c) no-repeat;
+
+}
+
+#four
+{
+    position: absolute;
+}
+
+.panelHolder
+{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.panels
+{
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin: 20px 50px;
+}
+
+img.selected {
+    /*border: 2px white solid;*/
+    box-shadow: 4px 1px 10px 3px #3e8839;
+}
